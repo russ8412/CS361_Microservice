@@ -23,4 +23,9 @@ Instructions how to recieve data:
    ![Screenshot 2024-02-26 at 10 32 34 PM](https://github.com/russ8412/CS361_Microservice/assets/148286128/0000793e-7a1a-41c5-9d3f-471f3f24edf9)
 
 3. The function "charsArrive = client.recv(1024)" , that recieves the response from the microservice and saves it to the variable "charsArrive". It is set to recieve only 1024 bytes per transmission.
-4. Lastly, the function "print(charsArrive.decode())" , that will decode the response held in the variable and print it to the terminal. 
+4. Lastly, the function "print(charsArrive.decode())" , that will decode the response held in the variable and print it to the terminal.
+
+
+UML Diagram:
+
+![Screenshot 2024-02-26 at 11 10 29 PM](https://github.com/russ8412/CS361_Microservice/assets/148286128/54c3e7ec-43e9-4f2f-8af8-0da677c18707)
