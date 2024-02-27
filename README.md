@@ -18,7 +18,8 @@ Instructions how to request data:
 Instructions how to recieve data:
 
 1. Within the client_MLB.py, that is suppose to resemble the UI (the image below)
+   
    ![Screenshot 2024-02-26 at 10 32 34 PM](https://github.com/russ8412/CS361_Microservice/assets/148286128/0000793e-7a1a-41c5-9d3f-471f3f24edf9)
 
-2. The function "charsArrive = client.recv(1024)" , that recieves the response from the microservice and saves it to the variable "charsArrive". It is set to recieve only 1024 bytes per transmission.
-3. Lastly, the function "print(charsArrive.decode())" , that will decode the response held in the variable and print it to the terminal. 
+3. The function "charsArrive = client.recv(1024)" , that recieves the response from the microservice and saves it to the variable "charsArrive". It is set to recieve only 1024 bytes per transmission.
+4. Lastly, the function "print(charsArrive.decode())" , that will decode the response held in the variable and print it to the terminal. 
