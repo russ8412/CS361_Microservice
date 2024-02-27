@@ -12,5 +12,13 @@ Instructions how to request data:
 
 
 2. In order to request data the function "client.connect((theHostName, portNum))". This establishes the TCP socket connection.
-3. The next function "sentInfo = input("Enter MLB Team name (CAPITALIZED): ")" this is how the UI grabs user input and saves that to sentInfo variable.
+3. The next function "sentInfo = input("Enter MLB Team name (CAPITALIZED): ")" this is how the UI grabs user input and saves that to "sentInfo" variable.
 4. Lastly, the function "client.send(sentInfo.encode())", this encodes the user input and sends it to the microservice. 
+
+Instructions how to recieve data:
+
+1. Within the client_MLB.py, that is suppose to resemble the UI (the image below)
+   ![Screenshot 2024-02-26 at 10 32 34 PM](https://github.com/russ8412/CS361_Microservice/assets/148286128/0000793e-7a1a-41c5-9d3f-471f3f24edf9)
+
+2. The function "charsArrive = client.recv(1024)" , that recieves the response from the microservice and saves it to the variable "charsArrive". It is set to recieve only 1024 bytes per transmission.
+3. Lastly, the function "print(charsArrive.decode())" , that will decode the response held in the variable and print it to the terminal. 
